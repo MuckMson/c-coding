@@ -1,0 +1,323 @@
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+0 0 
+
+Got X: 0.000000, Y: 0.000000
+  ⏳Processing...❌ NO%                                         muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+1.0 255
+
+Got X: 1.000000, Y: 255.000000
+  ⏳Processing...
+❌ NO
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec       
+📝 Please enter point position (e.g: 1.4 -2.0):
+> -1.2346673 -0.51239455
+
+Got X: -1.234667, Y: -0.512395
+  ⏳Processing...
+✅ YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+> d
+
+Got X: 0.000000, Y: 0.000000
+  ⏳Processing...
+❌ NO
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % clear
+
+muckmson@MacBook-Air-muckmson Практика №1 % ls
+mark3_exec						mark5_solution.png
+mark3_source.c						mark5_source.c
+mark4_exec						Вывод Терминала оценка 3.txt
+mark4_source.c						Вывод Терминала оценка 4.txt
+mark5_exec						Вывод Терминала оценка 5.txt
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:7:23: error: expected ';' at end of declaration
+    7 |    double v_sat = 7.56 // km per second
+      |                       ^
+      |                       ;
+mark5_extra_source.c:9:21: error: expected ';' at end of declaration
+    9 |    double R_e = 6371 // km 
+      |                     ^
+      |                     ;
+mark5_extra_source.c:14:17: warning: format specifies type 'wchar_t *' (aka 'int *') but the argument has
+      type 'double *' [-Wformat]
+   14 |    scanf("%ls", &alpha_degrees); printf("\n");
+      |           ~~~   ^~~~~~~~~~~~~~
+      |           %lf
+mark5_extra_source.c:20:36: warning: format specifies type 'wchar_t *' (aka 'int *') but the argument has
+      type 'double' [-Wformat]
+   20 |    printf("alpha = %ls radians\n", alpha); 
+      |                    ~~~             ^~~~~
+      |                    %f
+2 warnings and 2 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:14:17: warning: format specifies type 'wchar_t *' (aka 'int *') but the argument has
+      type 'double *' [-Wformat]
+   14 |    scanf("%ls", &alpha_degrees); printf("\n");
+      |           ~~~   ^~~~~~~~~~~~~~
+      |           %lf
+1 warning generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 67
+
+alpha = 1.169371 radians
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:24:4: error: use of undeclared identifier 'v_radial'
+   24 |    v_radial = v_sat * ((R_e * cos(alpha))/(R_e * sin(alpha) + d));
+      |    ^~~~~~~~
+mark5_extra_source.c:25:4: error: use of undeclared identifier 'delta_time'
+   25 |    delta_time = (v_radial / c) * pow(10,9);
+      |    ^~~~~~~~~~
+mark5_extra_source.c:25:18: error: use of undeclared identifier 'v_radial'
+   25 |    delta_time = (v_radial / c) * pow(10,9);
+      |                  ^~~~~~~~
+mark5_extra_source.c:27:4: error: use of undeclared identifier 'B'
+   27 |    B = v_radial / c;
+      |    ^
+mark5_extra_source.c:27:8: error: use of undeclared identifier 'v_radial'
+   27 |    B = v_radial / c;
+      |        ^~~~~~~~
+mark5_extra_source.c:28:4: error: use of undeclared identifier 'f_d'; did you mean 'f_0'?
+   28 |    f_d = (f_0 * sqrt((1+B)/(1-B)) - f_0)/1000;
+      |    ^~~
+      |    f_0
+mark5_extra_source.c:8:11: note: 'f_0' declared here
+    8 |    double f_0 = 2.18 * pow(10, 9); // hz
+      |           ^
+mark5_extra_source.c:28:25: error: use of undeclared identifier 'B'
+   28 |    f_d = (f_0 * sqrt((1+B)/(1-B)) - f_0)/1000;
+      |                         ^
+mark5_extra_source.c:28:31: error: use of undeclared identifier 'B'
+   28 |    f_d = (f_0 * sqrt((1+B)/(1-B)) - f_0)/1000;
+      |                               ^
+mark5_extra_source.c:31:24: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   31 |    printf("Distance: %l.2f\n", d);
+      |                      ~~^
+mark5_extra_source.c:32:44: error: use of undeclared identifier 'v_radial'
+   32 |    printf("Radial velocity (vr): %l.2f\n", v_radial);
+      |                                            ^~~~~~~~
+mark5_extra_source.c:33:39: error: use of undeclared identifier 'delta_time'
+   33 |    printf("Time drift (dT): %l.2f\n", delta_time);
+      |                                       ^~~~~~~~~~
+mark5_extra_source.c:34:42: error: use of undeclared identifier 'f_d'; did you mean 'f_0'?
+   34 |    printf("Doppler shift (fd): %l.2f\n", f_d);
+      |                                          ^~~
+      |                                          f_0
+mark5_extra_source.c:8:11: note: 'f_0' declared here
+    8 |    double f_0 = 2.18 * pow(10, 9); // hz
+      |           ^
+mark5_extra_source.c:34:34: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   34 |    printf("Doppler shift (fd): %l.2f\n", f_d);
+      |                                ~~^
+mark5_extra_source.c:37:9: error: use of undeclared identifier 'f_d'; did you mean 'f_0'?
+   37 |    if ((f_d > 42 || delta_time > 18) && (d/1000) > 1000) printf("PROFILE: CRITICAL ERROR");
+      |         ^~~
+      |         f_0
+mark5_extra_source.c:8:11: note: 'f_0' declared here
+    8 |    double f_0 = 2.18 * pow(10, 9); // hz
+      |           ^
+mark5_extra_source.c:37:21: error: use of undeclared identifier 'delta_time'
+   37 |    if ((f_d > 42 || delta_time > 18) && (d/1000) > 1000) printf("PROFILE: CRITICAL ERROR");
+      |                     ^~~~~~~~~~
+mark5_extra_source.c:38:13: error: use of undeclared identifier 'f_d'; did you mean 'f_0'?
+   38 |    else if (f_d > 25 && delta_time > 10) printf("PROFILE: HIGH DYNAMIC MODE");
+      |             ^~~
+      |             f_0
+mark5_extra_source.c:8:11: note: 'f_0' declared here
+    8 |    double f_0 = 2.18 * pow(10, 9); // hz
+      |           ^
+mark5_extra_source.c:38:25: error: use of undeclared identifier 'delta_time'
+   38 |    else if (f_d > 25 && delta_time > 10) printf("PROFILE: HIGH DYNAMIC MODE");
+      |                         ^~~~~~~~~~
+mark5_extra_source.c:39:14: error: use of undeclared identifier 'f_d'; did you mean 'f_0'?
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |              ^~~
+      |              f_0
+mark5_extra_source.c:8:11: note: 'f_0' declared here
+    8 |    double f_0 = 2.18 * pow(10, 9); // hz
+      |           ^
+mark5_extra_source.c:39:25: error: call to undeclared library function 'abs' with type 'int (int)'; ISO C99
+      and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |                         ^
+mark5_extra_source.c:39:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+mark5_extra_source.c:39:29: error: use of undeclared identifier 'delta_time'
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |                             ^~~~~~~~~~
+2 warnings and 18 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:31:24: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   31 |    printf("Distance: %l.2f\n", d);
+      |                      ~~^
+mark5_extra_source.c:32:36: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   32 |    printf("Radial velocity (vr): %l.2f\n", v_radial);
+      |                                  ~~^
+mark5_extra_source.c:33:31: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   33 |    printf("Time drift (dT): %l.2f\n", delta_time);
+      |                             ~~^
+mark5_extra_source.c:34:34: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   34 |    printf("Doppler shift (fd): %l.2f\n", f_d);
+      |                                ~~^
+mark5_extra_source.c:39:25: error: call to undeclared library function 'abs' with type 'int (int)'; ISO C99
+      and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |                         ^
+mark5_extra_source.c:39:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+mark5_extra_source.c:39:25: warning: using integer absolute value function 'abs' when argument is of floating
+      point type [-Wabsolute-value]
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |                         ^
+mark5_extra_source.c:39:25: note: use function 'fabs' instead
+   39 |    else if ( f_d > 3 || abs(delta_time) > 1) printf("PROFILE: NORMAL ACCELERATION");
+      |                         ^~~
+      |                         fabs
+5 warnings and 1 error generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:4:8: warning: incompatible redeclaration of library function 'abs'
+      [-Wincompatible-library-redeclaration]
+    4 | double abs(double target){
+      |        ^
+mark5_extra_source.c:4:8: note: 'abs' is a builtin with type 'int (int)'
+mark5_extra_source.c:36:24: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   36 |    printf("Distance: %l.2f\n", d);
+      |                      ~~^
+mark5_extra_source.c:37:36: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   37 |    printf("Radial velocity (vr): %l.2f\n", v_radial);
+      |                                  ~~^
+mark5_extra_source.c:38:31: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   38 |    printf("Time drift (dT): %l.2f\n", delta_time);
+      |                             ~~^
+mark5_extra_source.c:39:34: warning: invalid conversion specifier '.' [-Wformat-invalid-specifier]
+   39 |    printf("Doppler shift (fd): %l.2f\n", f_d);
+      |                                ~~^
+5 warnings generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+mark5_extra_source.c:4:8: warning: incompatible redeclaration of library function 'abs'
+      [-Wincompatible-library-redeclaration]
+    4 | double abs(double target){
+      |        ^
+mark5_extra_source.c:4:8: note: 'abs' is a builtin with type 'int (int)'
+1 warning generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                          
+Enter elevation angle alpha (0..90 degrees): 90
+
+Distance: 600000.00
+Radial velocity (vr): 0.00
+Time drift (dT): 0.00
+Doppler shift (fd): 0.00
+PROFILE: ZENITH MODE%                                                                                                             muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): 90
+
+Distance: 600000.00
+Radial velocity (vr): 0.00
+Time drift (dT): 0.00
+Doppler shift (fd): 0.00
+PROFILE: ZENITH MODE
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): 90
+
+Distance: 600.00 km
+Radial velocity (vr): 0.00 m/s
+Time drift (dT): 0.00 ns/s
+Doppler shift (fd): 0.00 kHz
+PROFILE: ZENITH MODE
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): 90
+
+Distance: 600.00 km
+Radial velocity (vr): 0.00 m/s
+Time drift (dT): 0.0000 ns/s
+Doppler shift (fd): 0.0000 kHz
+PROFILE: ZENITH MODE
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 78
+
+Distance: 612.22 km
+Radial velocity (vr): 1463.18 m/s
+Time drift (dT): 4880.6532 ns/s
+Doppler shift (fd): 0.0106 kHz
+PROFILE: NORMAL ACCELERATION
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 70
+
+Distance: 634.91 km
+Radial velocity (vr): 2487.78 m/s
+Time drift (dT): 8298.3482 ns/s
+Doppler shift (fd): 0.0181 kHz
+PROFILE: NORMAL ACCELERATION
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): 70
+
+Distance: 634.91 km
+Radial velocity (vr): 2487.78 m/s
+Time drift (dT): 8298.3482 ns/s
+Doppler shift (fd): 18.0905 kHz
+PROFILE: NORMAL ACCELERATION
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 45
+
+Distance: 814.80 km
+Radial velocity (vr): 6402.08 m/s
+Time drift (dT): 21355.0368 ns/s
+Doppler shift (fd): 46.5545 kHz
+PROFILE: HIGH DYNAMIC MODE
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 27
+
+Distance: 1153.74 km
+Radial velocity (vr): 10606.51 m/s
+Time drift (dT): 35379.4971 ns/s
+Doppler shift (fd): 77.1287 kHz
+PROFILE: CRITICAL ERROR
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): -8
+
+ERROR: Angle must be between 0 and 90 degrees.Distance: 3851.70 km
+Radial velocity (vr): 16086.20 m/s
+Time drift (dT): 53657.7893 ns/s
+Doppler shift (fd): 116.9771 kHz
+PROFILE: CRITICAL ERROR
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                   
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): -12
+
+ERROR: Angle must be between 0 and 90 degrees.%                                                                                   muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_extra_source.c                
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_extra_source.c -o mark5_extra_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec                       
+Enter elevation angle alpha (0..90 degrees): -22232343
+
+ERROR: Angle must be between 0 and 90 degrees.
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_extra_exec
+Enter elevation angle alpha (0..90 degrees): 91
+
+ERROR: Angle must be between 0 and 90 degrees.
+muckmson@MacBook-Air-muckmson Практика №1 % say "Это работает щикарно😜"
+muckmson@MacBook-Air-muckmson Практика №1 % 

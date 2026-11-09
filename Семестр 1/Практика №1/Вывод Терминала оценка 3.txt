@@ -1,0 +1,98 @@
+Last login: Thu Sep 10 11:21:17 on ttys000
+muckmson@MacBook-Air-muckmson ~ % ls 
+Applications			Public
+Desktop				PyCharmMiscProject
+Documents			QTE
+Downloads			Unity user templates
+Library				VETS
+MacDrop				gpt2-test
+Movies				iCloud Drive (архив)
+Music				mcpelauncher-extract
+Parallels			projects
+Pictures			Несортировано
+muckmson@MacBook-Air-muckmson ~ % cd Documents
+muckmson@MacBook-Air-muckmson Documents % ls
+04.09.2026 Лекция 1
+Без названия.dmg
+ВУЗ
+ЕГЭ ИНФОРМАТИКА
+Заявление на общежитие.pdf
+Мемы
+Проекты
+Сканы
+ТАТАРИАНСТВО
+Токены.rtf
+портфолио.pdf
+muckmson@MacBook-Air-muckmson Documents % cd ВУЗ
+muckmson@MacBook-Air-muckmson ВУЗ % ls
+Алгебра и Геометрия
+Архитектура ЭВМ
+История России
+Математика
+ОРГ
+Операционные системы 
+Программирование 
+Тест
+Шаблон презентация_СибГУТИ с логотипами Минцифры.pptx
+muckmson@MacBook-Air-muckmson ВУЗ % cd "Программирование"
+cd: no such file or directory: Программирование
+muckmson@MacBook-Air-muckmson ВУЗ % cd "Программирование"
+cd: no such file or directory: Программирование
+muckmson@MacBook-Air-muckmson ВУЗ % cd Программирование
+cd: no such file or directory: Программирование
+muckmson@MacBook-Air-muckmson ВУЗ % ls
+Алгебра и Геометрия
+Архитектура ЭВМ
+История России
+Математика
+ОРГ
+Операционные системы 
+Программирование 
+Тест
+Шаблон презентация_СибГУТИ с логотипами Минцифры.pptx
+muckmson@MacBook-Air-muckmson ВУЗ % cd /Users/muckmson/Documents/ВУЗ/Программирование\
+muckmson@MacBook-Air-muckmson Программирование  % ls
+Семестр 1
+muckmson@MacBook-Air-muckmson Программирование  % cd "Семестр 1"
+muckmson@MacBook-Air-muckmson Семестр 1 % ls
+Лаб 0					Лекция 1 - Условия 
+muckmson@MacBook-Air-muckmson Семестр 1 % mkdir "Практика №1"
+muckmson@MacBook-Air-muckmson Семестр 1 % cd "Практика №1"
+muckmson@MacBook-Air-muckmson Практика №1 % ls
+muckmson@MacBook-Air-muckmson Практика №1 % pwd
+/Users/muckmson/Documents/ВУЗ/Программирование /Семестр 1/Практика №1
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark3_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark3_source.c -o mark3_exec 
+mark3_source.c:1:10: fatal error: 'stido.h' file not found
+    1 | #include <stido.h>
+      |          ^~~~~~~~~
+1 error generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark3_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark3_source.c -o mark3_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec 
+Введите номер года: 2026
+
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark3_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark3_source.c -o mark3_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec                    
+Введите номер года: 2026
+
+NO%                                                                             muckmson@MacBook-Air-muckmson Практика №1 % nano mark3_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark3_source.c -o mark3_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec                    
+Введите номер года: 2026
+
+NO
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2024
+
+YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2028
+
+YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2027
+
+NO
+muckmson@MacBook-Air-muckmson Практика №1 % 

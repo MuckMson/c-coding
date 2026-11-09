@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <time.h>
+
+int main(){
+int a,b,c,d;
+a=10;
+b=a++;
+c=++a;
+d=10*a++;
+printf("b,c,d: %d, %d, %d",b,c,d);
+
+}

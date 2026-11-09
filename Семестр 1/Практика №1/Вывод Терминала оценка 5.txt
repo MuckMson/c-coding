@@ -1,0 +1,105 @@
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 98f
+
+Output temperature: 36.7c
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 36.7c
+
+Output temperature: 98.1f
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 36a
+
+Output error💥/n%                                                               muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 4a
+
+Output error💥
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: -2223435.5f
+
+Output temperature: -1235259.8c
+muckmson@MacBook-Air-muckmson Практика №1 % clear
+
+muckmson@MacBook-Air-muckmson Практика №1 % ls
+mark3_exec
+mark3_source.c
+mark4_exec
+mark4_source.c
+Вывод Терминала оценка 3.txt
+Вывод Терминала оценка 4.txt
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec 
+mark5_source.c:11:11: warning: missing
+      terminating '"' character [-Winvalid-pp-token]
+   11 |    printf("Please enter point position (e.g: 1.4 -2.0)\n
+      |           ^
+mark5_source.c:11:11: error: expected
+      expression
+mark5_source.c:12:4: warning: missing
+      terminating '"' character [-Winvalid-pp-token]
+   12 |         > ");
+      |           ^
+2 warnings and 1 error generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+Please enter point position (e.g: 1.4 -2.0):
+5.4 22.4
+
+Got X: 5.400000, Y: 22.400000%                                  muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec       
+📝 Please enter point position (e.g: 1.4 -2.0):
+4.3 1.2
+
+Got X: 4.300000, Y: 1.200000%                                   muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec       
+📝 Please enter point position (e.g: 1.4 -2.0):
+-1 0
+
+Got X: -1.000000, Y: 0.000000
+  ⏳Processing...❌ NO%                                         muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec       
+📝 Please enter point position (e.g: 1.4 -2.0):
+-1 0
+
+Got X: -1.000000, Y: 0.000000
+  ⏳Processing...✅ YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+0 0 
+
+Got X: 0.000000, Y: 0.000000
+  ⏳Processing...❌ NO%                                         muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+1.0 255
+
+Got X: 1.000000, Y: 255.000000
+  ⏳Processing...
+❌ NO
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark5_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec       
+📝 Please enter point position (e.g: 1.4 -2.0):
+> -1.2346673 -0.51239455
+
+Got X: -1.234667, Y: -0.512395
+  ⏳Processing...
+✅ YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark5_exec
+📝 Please enter point position (e.g: 1.4 -2.0):
+> d
+
+Got X: 0.000000, Y: 0.000000
+  ⏳Processing...
+❌ NO
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark5_source.c -o mark5_exec
+muckmson@MacBook-Air-muckmson Практика №1 % 
+

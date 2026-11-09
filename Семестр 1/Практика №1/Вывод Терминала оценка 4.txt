@@ -1,0 +1,184 @@
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec                    
+Введите номер года: 2026
+
+NO%                                                                             muckmson@MacBook-Air-muckmson Практика №1 % nano mark3_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark3_source.c -o mark3_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec                    
+Введите номер года: 2026
+
+NO
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2024
+
+YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2028
+
+YES
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark3_exec
+Введите номер года: 2027
+
+NO
+muckmson@MacBook-Air-muckmson Практика №1 % clear 
+
+muckmson@MacBook-Air-muckmson Практика №1 % ls 
+mark3_exec
+mark3_source.c
+Вывод Терминала оценка 3.txt
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec 
+mark4_source.c:4:9: error: definition of variable with
+      array type needs an explicit size or an initializer
+    4 |    char inp_str[];
+      |         ^
+mark4_source.c:6:17: error: use of undeclared identifier
+      't'
+    6 |    scanf("%c", &t);
+      |                 ^
+2 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+mark4_source.c:4:18: error: brackets are not allowed here;
+      to declare an array, place the brackets after the identifier
+    4 |    char[] inp_str;
+      |        ~~        ^
+      |                  []
+mark4_source.c:4:11: error: definition of variable with
+      array type needs an explicit size or an initializer
+    4 |    char[] inp_str;
+      |           ^
+2 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+mark4_source.c:5:20: warning: empty character constant
+      [-Winvalid-pp-token]
+    5 |    char inp_unit = '';
+      |                    ^
+mark4_source.c:5:20: error: expected expression
+mark4_source.c:9:11: error: use of undeclared identifier
+      'inp_str'
+    9 |    printf(inp_str);
+      |           ^~~~~~~
+1 warning and 2 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+mark4_source.c:5:20: warning: empty character constant
+      [-Winvalid-pp-token]
+    5 |    char inp_unit = '';
+      |                    ^
+mark4_source.c:5:20: error: expected expression
+mark4_source.c:9:20: error: expected expression
+    9 |    printf("%f %c", %inp_temp, %inp_unit);
+      |                    ^
+mark4_source.c:9:31: error: expected expression
+    9 |    printf("%f %c", %inp_temp, %inp_unit);
+      |                               ^
+1 warning and 3 errors generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+mark4_source.c:5:20: warning: empty character constant
+      [-Winvalid-pp-token]
+    5 |    char inp_unit = '';
+      |                    ^
+mark4_source.c:5:20: error: expected expression
+1 warning and 1 error generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 37.3c
+37.299999 c%                                                                    muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+mark4_source.c:8:16: error: expected ';' after expression
+    8 |    printf("\n")
+      |                ^
+      |                ;
+1 error generated.
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 47.33f
+
+Output temperature: 8.516667c%                                                  muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 36.6c
+
+Output temperature: 97.879997f
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 36.6c 
+
+Output temperature: 97.879997f
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 36.6c
+
+Output temperature: 97.9f
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 98f
+
+Output temperature: 36.7c
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 36.6a
+
+Output error💥Output temperature: 0.0
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec       
+Input temperature: 1d
+
+Output error💥Output temperature: 0.0
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 3fr
+
+Output temperature: -16.1c
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: d
+
+Output error💥%                                                                 muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+^[[A%                                                                           muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 36.3f
+
+Output error💥
+Output temperature: 2.4c
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 36.3f
+
+Output error💥
+Output temperature: 2.4c
+muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 37.4f
+
+Output temperature: 3.0c
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 98f
+
+Output temperature: 36.7c
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 36.7c
+
+Output temperature: 98.1f
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: 36a
+
+Output error💥/n%                                                               muckmson@MacBook-Air-muckmson Практика №1 % nano mark4_source.c             
+muckmson@MacBook-Air-muckmson Практика №1 % gcc mark4_source.c -o mark4_exec
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec                    
+Input temperature: 4a
+
+Output error💥
+muckmson@MacBook-Air-muckmson Практика №1 % ./mark4_exec
+Input temperature: -2223435.5f
+
+Output temperature: -1235259.8c
+muckmson@MacBook-Air-muckmson Практика №1 % 

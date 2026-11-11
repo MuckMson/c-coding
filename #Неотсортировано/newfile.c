@@ -9,9 +9,9 @@ int main(){
     //     printf("%d\n", X[k]);
     // }
 
-int *p = malloc(100);
-free(p);
-p = NULL;
-free(p);
 
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+
+int i = 0; int m = MIN(i++, 10);
+printf("%d",i);
 }

@@ -145,7 +145,7 @@ int is_win()
 
 
 void new_field(int mines, int safe_x, int safe_y)
-{ // temperature – сложность игры от 0 до 1, где 0 – нет мин 1 – все мины
+{
     srand((unsigned)time(NULL));
     for (int i = 0; i < bombs_cnt; i++)
     {
@@ -183,8 +183,6 @@ void print_status(int ingame)
 
 int main()
 {
-
-    char dummy;
 
     while (N <= 0)
     {

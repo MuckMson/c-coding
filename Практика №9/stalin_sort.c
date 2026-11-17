@@ -8,3 +8,4 @@ int stalin_sort(int *a, int n) {
 }
 
 // Hello, I am Macintosh. It sure is great to get out of that bag!-
+// Access denied.

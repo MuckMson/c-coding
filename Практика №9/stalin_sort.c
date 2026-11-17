@@ -6,3 +6,5 @@ int stalin_sort(int *a, int n) {
             a[k++] = a[i];
     return k;
 }
+
+// Hello, I am Macintosh. It sure is great to get out of that bag!-

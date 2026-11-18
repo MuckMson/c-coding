@@ -32,4 +32,7 @@
 11. ![[Screenshot 2026-11-18 at 10.01.39 AM.png]]
 12. ![[Screenshot 2026-11-18 at 10.02.15 AM.png]]
 13. ![[Screenshot 2026-11-18 at 10.02.39 AM.png]]
-14. Разница между ветками в том, что в `main` нет файлов .gitignore, applewatch.jpeg, file1.txt и meme.jpeg, meme.txt, зато есть text2.txt. То есть mybranch содержит файлы, которых нет в main, а main содержит text2.txt, которого нет в `mybranch`.![[Screenshot 2026-11-18 at 10.03.58 AM.png]]
+14. Да, пропал,  так как это другая ветка и туда text2.txt мы не добавляли.
+15. Разница между ветками в том, что в `main` нет файлов .gitignore, applewatch.jpeg, file1.txt и meme.jpeg, meme.txt, зато есть text2.txt. То есть mybranch содержит файлы, которых нет в main, а main содержит text2.txt, которого нет в mybranch![[Screenshot 2026-11-18 at 10.03.58 AM.png]]
+16. ![[Screenshot 2026-11-18 at 10.08.58 AM.png]]
+17. 

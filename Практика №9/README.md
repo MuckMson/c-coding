@@ -1,4 +1,4 @@
-![[Screenshot 2026-11-18 at 11.09.14 AM.png]]0. конфигурируем гит в терминале
+![](Screenshots/Screenshot%202026-11-18%20at%2011.09.14%20AM.png)0. конфигурируем гит в терминале
 ![](Screenshots/Screenshot%202026-11-11%20at%2011.15.11%20AM.png)
 
 1.  мы находимся в ветке main, видны неотслеживаемые скрытые файлы Finder и скриншоты.![](Screenshots/Screenshot%202026-11-11%20at%2011.16.30%20AM.png)
@@ -37,17 +37,56 @@
 16. ![](Screenshots/Screenshot%202026-11-18%20at%2010.08.58%20AM.png)
 
 ## Оценка 4
-1. Убедились, что мы на ветке mybranch![[Screenshot 2026-11-18 at 11.05.35 AM.png]]
-2. ![[Screenshot 2026-11-18 at 11.05.50 AM.png]]
-3. ![[Screenshot 2026-11-18 at 11.08.31 AM.png]]
-4. В самом деле пустой.![[Screenshot 2026-11-18 at 11.09.14 AM.png]]
-5. ![[Screenshot 2026-11-18 at 11.10.22 AM.png]]
-6. ![[Screenshot 2026-11-18 at 11.11.01 AM.png]]
-7. `git diff` сравнивает рабочую папку с индексом, а `git diff --staged` сравнивает индекс с последним коммитом.![[Screenshot 2026-11-18 at 11.11.30 AM.png]]
-8. ![[Screenshot 2026-11-18 at 11.22.04 AM.png]]
-9. ![[Screenshot 2026-11-18 at 11.22.29 AM.png]]
+1. Убедились, что мы на ветке mybranch![](Screenshots/Screenshot%202026-11-18%20at%2011.05.35%20AM.png)
+2. ![](Screenshots/Screenshot%202026-11-18%20at%2011.05.50%20AM.png)
+3. ![](Screenshots/Screenshot%202026-11-18%20at%2011.08.31%20AM.png)
+4. В самом деле пустой.![](Screenshots/Screenshot%202026-11-18%20at%2011.09.14%20AM.png)
+5. ![](Screenshots/Screenshot%202026-11-18%20at%2011.10.22%20AM.png)
+6. ![](Screenshots/Screenshot%202026-11-18%20at%2011.11.01%20AM.png)
+7. `git diff` сравнивает рабочую папку с индексом, а `git diff --staged` сравнивает индекс с последним коммитом.![](Screenshots/Screenshot%202026-11-18%20at%2011.11.30%20AM.png)
+8. ![](Screenshots/Screenshot%202026-11-18%20at%2011.22.04%20AM.png)
+9. ![](Screenshots/Screenshot%202026-11-18%20at%2011.22.29%20AM.png)
 10. --staged показывает изменения в файлах только добавленные к коммиту, без этого параметра diff показывает все изменения по сравнению с прошлым коммитом
-11.  stalin_sort.c действительно отображается в поле изменных и в поле не добавленных в коммит.![[Screenshot 2026-11-18 at 11.23.47 AM.png]]
-12. ![[Screenshot 2026-11-23 at 10.07.18 AM.png]]
-13. ![[Screenshot 2026-11-23 at 10.08.09 AM.png]]
-14. 
+11.  stalin_sort.c действительно отображается в поле изменных и в поле не добавленных в коммит.![](Screenshots/Screenshot%202026-11-18%20at%2011.23.47%20AM.png)
+12. ![](Screenshots/Screenshot%202026-11-23%20at%2010.07.18%20AM.png)
+13. ![](Screenshots/Screenshot%202026-11-23%20at%2010.08.09%20AM.png)
+14. ![](Screenshots/Screenshot%202026-11-23%20at%2010.30.45%20AM.png)
+15.  Не удалось!![](Screenshots/Screenshot%202026-11-23%20at%2010.31.48%20AM.png)
+16. Разрешим конфликт, нажав Accept Both Changes.![](Screenshots/Screenshot%202026-11-23%20at%2010.37.26%20AM.png)
+
+
+# **Ветки и ff-merge**
+1. ![](Screenshots/Screenshot%202026-11-23%20at%2011.04.04%20AM.png)
+2. ![](Screenshots/Screenshot%202026-11-23%20at%2011.04.48%20AM.png)
+3. ![](Screenshots/Screenshot%202026-11-23%20at%2011.06.02%20AM.png)
+4. ![](Screenshots/Screenshot%202026-11-23%20at%2011.06.46%20AM.png)
+5. ![](Screenshots/Screenshot%202026-11-23%20at%2011.07.06%20AM.png)
+6. ![](Screenshots/Screenshot%202026-11-23%20at%2011.08.04%20AM.png)
+7. ![](Screenshots/Screenshot%202026-11-23%20at%2011.08.37%20AM.png)
+8. ![](Screenshots/Screenshot%202026-11-23%20at%2011.10.50%20AM.png)
+9. ![](Screenshots/Screenshot%202026-11-23%20at%2011.11.14%20AM.png)
+10. ![](Screenshots/Screenshot%202026-11-23%20at%2011.11.50%20AM.png)
+11. ![](Screenshots/Screenshot%202026-11-23%20at%2011.12.21%20AM.png)
+12. ![](Screenshots/Screenshot%202026-11-23%20at%2011.12.45%20AM.png)
+13. ![](Screenshots/Screenshot%202026-11-23%20at%2011.13.32%20AM.png)
+14. ![](Screenshots/Screenshot%202026-11-23%20at%2011.14.06%20AM.png)
+15. ![](Screenshots/Screenshot%202026-11-23%20at%2011.14.26%20AM.png)
+16. ![](Screenshots/Screenshot%202026-11-23%20at%2011.15.08%20AM.png)
+17. ![](Screenshots/Screenshot%202026-11-23%20at%2011.15.46%20AM.png)
+18. ![](Screenshots/Screenshot%202026-11-23%20at%2011.16.10%20AM.png)
+19. ![](Screenshots/Screenshot%202026-11-23%20at%2011.17.11%20AM.png)
+# **Merge конфликты** для сортировки MergeSort на python.
+
+1. ![](Screenshots/Screenshot%202026-11-23%20at%2010.34.07%20AM.png)
+2. ![](Screenshots/Screenshot%202026-11-23%20at%2010.39.32%20AM.png)
+3. ![](Screenshots/Screenshot%202026-11-23%20at%2010.40.10%20AM.png)
+4. ![](Screenshots/Screenshot%202026-11-23%20at%2010.46.01%20AM.png)
+5. ![](Screenshots/Screenshot%202026-11-23%20at%2010.49.36%20AM.png)
+6. ![](Screenshots/Screenshot%202026-11-23%20at%2010.50.37%20AM.png)
+7. ![](Screenshots/Screenshot%202026-11-23%20at%2010.51.02%20AM.png)
+8. С первого раза не удалось.![](Screenshots/Screenshot%202026-11-23%20at%2010.54.13%20AM.png)
+9. Попытались устранить конфликты, сохранив логику программы![](Screenshots/Screenshot%202026-11-23%20at%2010.56.28%20AM.png)
+10. ![](Screenshots/Screenshot%202026-11-23%20at%2010.58.16%20AM.png)
+
+# На этом мой рабочий день окончен. Наверное.... 
+![[images-21.jpeg]]

@@ -89,5 +89,5 @@
 10. ![](Screenshots/Screenshot%202026-11-23%20at%2010.58.16%20AM.png)
 
 # На этом мой рабочий день окончен. Наверное.... 
-![[Screenshot 2026-11-23 at 11.21.37 AM.png]]
-![[images-21.jpeg]]
+![](Screenshots/Screenshot%2026-11-23%at%11.21.37%AM.png)
+![](images-21.jpeg)

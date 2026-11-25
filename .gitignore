@@ -1,5 +1,6 @@
 .obsidian/
 .vscode/
+.strip_exec.sh
 # macOS
 .DS_Store
 ._*
@@ -34,3 +35,4 @@ vgcore.*
 # Логи и временное
 *.log
 *.tmp
+

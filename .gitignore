@@ -1,2 +1,36 @@
 .obsidian/
 .vscode/
+# macOS
+.DS_Store
+._*
+
+# Скомпилированное
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.dylib
+*.exe
+*.d
+_*
+
+# Отладочная информация (macOS создаёт при компиляции с -g)
+*.dSYM/
+
+# Файлы отладчика и анализаторов
+core
+*.core
+vgcore.*
+*.gcda
+*.gcno
+
+# Редакторы и IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Логи и временное
+*.log
+*.tmp
